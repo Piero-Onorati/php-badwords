@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+
+<a href="script.php?parola=Apelle">Link</a>
     
 </body>
 </html>
