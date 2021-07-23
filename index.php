@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<a href="script.php?parola=Apelle">Link</a>
-    
+<a href="script.php?bad_word=Voldemort">Link</a>
+
 </body>
 </html>

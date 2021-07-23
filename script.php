@@ -1,8 +1,20 @@
 <?php 
 
-$text ='Apelle, figlio di Apollo fece una palla di pelle di pollo,  tutti i pesci vennero a galla  per vedere  quella bella palla di pelle di pollo fatta da Apelle, figlio di Apollo';
+$text ='‘Severus, here,’ said Voldemort, indicating the seat on his
+immediate right. ‘Yaxley – beside Dolohov.’
+The two men took their allotted places. Most of the eyes
+around the table followed Snape and it was to him that Voldemort
+spoke first.
+‘So?’
+‘My Lord, the Order of the Phoenix intends to move Harry
+Potter from his current place of safety on Saturday next, at
+nightfall.’
+The interest around the table sharpened palpably: : some
+stiffened, others fidgeted, all gazing at Snape and Voldemort';
 
-// <a href="script.php?parola=Apelle">Link</a>
+// <a href="script.php?bad_word=Voldemort">Link</a>
+
+$bad_word = $_GET['bad_word'];
 
 ?>
 
@@ -16,11 +28,27 @@ $text ='Apelle, figlio di Apollo fece una palla di pelle di pollo,  tutti i pesc
 </head>
 <body>
 
-<h2>Scioglilingua</h2>
+<h2>THE DARK LORD ASCENDING</h2>
+
+<h3>This is an Extract from Harry-Potter-and-the-Deathly-Hallows </h3>
 
 <p> <?php echo $text ?> </p>
 
-<h3> La lunghezza del paragrafo è : <?php echo strlen($text); ?> lettere</h3>
+<span><strong>Paragraph length:</strong> <?php echo strlen($text); ?> lettere</span>
+
+<h3>Since Voldemort is "You-Know-Who" or "He-Who-Must-Not-Be-Named" and therefore written or read...</h3>
+
+<p> 
+    <?php 
+        $new_text = str_replace( $bad_word, '(***)', $text);
+        echo $new_text ;
+    ?> 
+</p>
+
+<span><strong>Paragraph length:</strong> <?php echo strlen($new_text); ?> lettere</span>
+
+
+
     
 </body>
 </html>
